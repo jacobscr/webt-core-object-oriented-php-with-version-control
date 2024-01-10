@@ -6,6 +6,11 @@ abstract class AbstractVideo implements InterfaceVideo {
     protected $source;
     protected $embedCode;
 
+    public function __construct($name, $source) {
+        $this->name = $name;
+        $this->source = $source;
+    }
+
     public function getName() : string {
         return $this->name;
     }
@@ -13,10 +18,5 @@ abstract class AbstractVideo implements InterfaceVideo {
     public function getSource() : string {
         return $this->source;
     }
-
-    public function getEmbeddingCode() : string {
-        return $this->embedCode;
-    }
-
 }
 ?>
