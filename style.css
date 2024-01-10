@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    margin-left: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.video-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.video-entry iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.video-entry h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.video-entry p {
+    padding-left: 1rem;
+    margin-top: -1rem;
+}
