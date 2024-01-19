@@ -15,7 +15,7 @@ require_once 'src/YoutubeVideo.php';
         <section class="grid">
             <div class="video-entry">
                 <?php
-                    $video = new YoutubeVideo("Never Gonna Give You Up", "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+                    $video = new YoutubeVideo("How Chefs Feed 100,000 Michigan Fans At America's Biggest Football Stadium | Big Business", "https://www.youtube.com/watch?v=a51ZHTRWtrc");
                     echo '<h2>' . $video->getName() . '</h2>';
                     echo '<p>Origin: ' . $video->origin . '</p>';
                     echo $video->getEmbeddingCode();
